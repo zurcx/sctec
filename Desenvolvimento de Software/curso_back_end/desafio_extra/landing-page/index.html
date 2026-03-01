@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiz Cruz — Desenvolvedor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">LC</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, meu nome é</p>
+      <h1 class="hero-name">Luiz Cruz</h1>
+      <h2 class="hero-tagline">Eu construo coisas para a web.</h2>
+      <p class="hero-description">
+        Sou um desenvolvedor de software especializado em criar experiências
+        digitais excepcionais. Atualmente focado em construir produtos
+        acessíveis e centrados no usuário.
+      </p>
+      <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section-title">Sobre Mim</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Olá! Sou o Luiz Cruz, um desenvolvedor apaixonado que gosta de criar
+          coisas que vivem na internet. Meu interesse por desenvolvimento web
+          começou quando decidi personalizar um tema de blog — e mexer com
+          HTML &amp; CSS me ensinou muito!
+        </p>
+        <p>
+          Avançando até hoje, tive o privilégio de trabalhar em uma grande
+          variedade de projetos. Meu foco principal atualmente é construir
+          produtos e liderar equipes que entregam valor real aos usuários.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="foto_linkedin.jpeg" alt="Luiz Cruz" class="about-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">&#9672;</div>
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React, Vue.js, design responsivo &amp; acessibilidade.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#9881;</div>
+        <h3>Backend</h3>
+        <p>Node.js, Python, APIs REST, bancos de dados, arquitetura de servidores &amp; DevOps.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#9998;</div>
+        <h3>Design</h3>
+        <p>Fundamentos de UI/UX, Figma, prototipagem, wireframing &amp; design systems.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#9733;</div>
+        <h3>Outros</h3>
+        <p>Git, CI/CD, metodologias ágeis, testes, otimização de performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Projetos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">Projeto 1</div>
+        <div class="project-info">
+          <h3>Projeto Um</h3>
+          <p>Uma aplicação web que ajuda usuários a rastrear seus hábitos diários e construir rotinas positivas.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small">Demo</a>
+            <a href="#" class="btn btn-small btn-outline">Código Fonte</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Projeto 2</div>
+        <div class="project-info">
+          <h3>Projeto Dois</h3>
+          <p>Um painel interativo para visualização de dados com atualizações em tempo real e filtragem.</p>
+          <div class="project-tags">
+            <span>Vue.js</span><span>D3.js</span><span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small">Demo</a>
+            <a href="#" class="btn btn-small btn-outline">Código Fonte</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">Projeto 3</div>
+        <div class="project-info">
+          <h3>Projeto Três</h3>
+          <p>Uma plataforma de e-commerce mobile-first com uma experiência de checkout fluida.</p>
+          <div class="project-tags">
+            <span>Next.js</span><span>Stripe</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small">Demo</a>
+            <a href="#" class="btn btn-small btn-outline">Código Fonte</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <h2 class="section-title">Entre em Contato</h2>
+    <div class="contact-content">
+      <p>
+        Estou aberto a novas oportunidades. Se você tem alguma pergunta
+        ou só quer dar um oi, minha caixa de entrada está sempre aberta!
+      </p>
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="name" placeholder="Seu Nome" required />
+        <input type="email" name="email" placeholder="Seu E-mail" required />
+        <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+    </div>
+    <p>&copy; 2026 Luiz Cruz. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
