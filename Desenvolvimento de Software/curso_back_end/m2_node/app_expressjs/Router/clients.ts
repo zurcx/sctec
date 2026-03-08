@@ -4,9 +4,18 @@ import clientsController from "../Controller/clientsController";
 const router = Router();
 
 
-router.get('/', clientsController.index)
-router.get('/sobrenos', clientsController.sobrenos)
-router.get('/tecnologias', clientsController.tecnologia)
-router.get('/contato', clientsController.contatos)
+router.get('clients/', clientsController.index)
+
+
+
+router.get('clients/search', clientsController.search)
+router.get('clients/create', clientsController.create)
+router.post('clients/create', clientsController.store)
+router.get('clients/:id', clientsController.show)
+router.get('clients/edit/:id', clientsController.edit)
+router.post('clients/edit/:id', clientsController.update)
+router.get('clients/del/:id', clientsController.del)
+
+
 
 export default router
